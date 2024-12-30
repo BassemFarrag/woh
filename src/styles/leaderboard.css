@@ -1,0 +1,105 @@
+/* Leaderboard styles */
+.leaderboard {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.leaderboard h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.leaderboard-item {
+  display: grid;
+  grid-template-columns: 60px 1fr 100px;
+  padding: 1rem;
+  border-bottom: 1px solid var(--secondary);
+  align-items: center;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.rank {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.name {
+  font-weight: 500;
+}
+
+.score {
+  text-align: right;
+  font-weight: 600;
+}
+
+.secondary-button {
+  background: var(--secondary);
+  color: var(--primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.secondary-button:hover {
+  background: #e5e7eb;
+  color: var(--primary-dark);
+}
+
+/* Name input modal */
+.name-modal {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.name-modal h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.name-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.share-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.share-link:hover {
+  text-decoration: underline;
+}

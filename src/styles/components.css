@@ -1,0 +1,39 @@
+/* ... (previous styles) ... */
+
+/* Language Selector */
+.language-selector {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.language-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  appearance: none;
+  background: var(--white);
+  cursor: pointer;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.language-select option {
+  padding: 0.5rem;
+}
+
+/* Add a custom dropdown arrow */
+.language-selector::after {
+  content: '▼';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--primary);
+  font-size: 0.8rem;
+}

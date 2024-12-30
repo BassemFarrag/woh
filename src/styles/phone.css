@@ -1,0 +1,94 @@
+@media screen and (max-width: 471px) {
+
+  .container {
+    padding: 0 1rem;
+  }
+  .welcome-screen {
+    padding: 1rem;
+  }
+  .topic-wrapper {
+    max-width: 100%;
+  }
+  .topic-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  .progress-bar {
+    margin-bottom: 1rem;
+  }
+  #question-container {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  #question-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .secondary-button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .nav-language {
+    width: 150px;
+  }
+  .nav-language select {
+    padding: 0.75rem 2rem 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .nav-language::after {
+    right: 0.75rem;
+    font-size: 0.7rem;
+  }
+  .more-more {
+    padding: 1rem;
+  }
+  .more-button {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .more-button a {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.9rem;
+  }
+   
+    .konoha-logo {
+        height: 2rem;
+    }
+    .merch-cta {
+        padding: 0.75rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    .name-modal {
+        padding: 1rem;
+    }
+    .name-modal h3 {
+        margin-bottom: 0.5rem;
+    }
+    .name-input {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    .rank {
+        font-weight: 500;
+    }
+    .name {
+        font-weight: 400;
+    }
+    .score {
+        font-weight: 500;
+    }
+    .secondary-button {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    .secondary-button:hover {
+        background: var(--secondary);
+        color: var(--primary);
+    }
+    .secondary-button:hover {
+        background: #e5e7eb;
+        color: var(--primary-dark);
+    }
+}

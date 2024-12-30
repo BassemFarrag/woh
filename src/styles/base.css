@@ -1,0 +1,135 @@
+:root {
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+  --primary: #fbaf0a;
+  --primary-dark: #b37a00;  
+  --primary-light: #818cf8;
+  --secondary: #f3f4f6;
+  --text: #f0f0f0;
+  --text-light: #6b7280;
+  --error: #ef4444;
+  --success: #22c55e;
+  --white: #ffffff;
+  --radius: 0.75rem;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  font-family: "Alexandria", serif, system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background-image: url('/hunter-exam-thumbnail-1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.error-message {
+  background: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.primary-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.primary-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.secondary-button {
+  background: rgba(0, 0, 0, 0.00);
+  color: var(--text);
+  border: 2px solid var(--primary);
+  padding: 1rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.secondary-button:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.more-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-button{
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 0;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.more-button a:hover{
+  color: var(--primary);
+  transition: all 0.2s;
+}
+
+.more-button a {
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border: 0;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  color: var(--text);
+  transition: all 0.2s; 
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
