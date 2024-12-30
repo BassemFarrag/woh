@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./konoha-fav-icon-1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>The Hunters Exam</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <a href="/" class="nav-brand"><img class="konoha-logo"  src="./konoha-quiz.png" alt=""></a>
+         
+        <a href="#" class="merch-cta nav-compainer" id="merch-link" target="_blank">Get Your Merch Today!</a>
+        <div class="nav-language">
+          <select id="language-select">
+            <!-- Options will be populated by JavaScript -->
+          </select>
+        </div>
+      
+      </nav>
+    
+    
+    <main>
+      <section class="top-side-bar">ADS</section>
+      <aside class="left-side-bar">ADS</aside>
+      
+      <section>
+
+    <div class="quiz-container">
+      <div id="leaderboard-container"></div>
+      
+      
+
+      <div id="error-message" class="error-message hidden"></div>
+      
+      <div id="topic-selection" class="welcome-screen">
+        <div class="quiz-header">
+          <h1>Hunter Exam</h1>
+          <p>Challenge yourself with our interactive Exam</p>
+        </div>
+
+        <div class="topic-wrapper">
+          <input 
+            type="text" 
+            id="topic" 
+            class="topic-input"
+            placeholder="Enter any topic you'd like to learn about..."
+            value="Hunter x Hunter"
+          >
+          <button id="start-quiz" class="primary-button">Start Now</button>
+          <button id="show-leaderboard" class="secondary-button">View Leaderboard</button>
+        </div>
+      </div>
+
+      <div id="quiz-content" class="hidden">
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="question-container">
+          <p id="question-text"></p>
+          <div id="options-container" class="options-grid"></div>
+        </div>
+        <button id="next-question" class="next-button hidden">Next Question</button>
+        
+        <div id="result" class="result-container hidden">
+          <h2>Exam Complete! 🎉</h2>
+          <div id="name-input" class="name-modal">
+            <h3>Save Your Score</h3>
+            <input type="text" id="player-name" class="name-input" placeholder="Enter your name">
+            <button id="save-score" class="primary-button">Save Score</button>
+          </div>
+          <div id="final-score" class="hidden">
+            <div class="score-display">
+              <p>Your Score</p>
+              <div id="score" class="score">0</div>
+              <p id="rank-info" class="rank-info"></p>
+            </div>
+            <div class="button-group">
+              <button id="share-score" class="primary-button">Share Score</button>
+              <button id="restart-quiz" class="secondary-button">Try Again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-more">
+        <button id="more-anime-button" class="more-button"><a href="/">More Anime Exames</a></button>
+      </div>
+    </section>
+    <aside class="right-side-bar">ADS</aside>
+    <section class="bottom-side-bar">ADS</section>
+    </main>
+
+      <div id="loading" class="loading hidden">
+        <div class="loader"></div>
+        <p>Preparing your Exam...</p>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
